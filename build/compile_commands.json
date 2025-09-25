@@ -1,6 +1,24 @@
 [
 {
   "directory": "C:/_Me_GitHub/connogge/build",
+  "command": "C:\\Users\\ahmad\\MinGW\\mingw64\\bin\\c++.exe -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include -g -std=gnu++23 -fmodules-ts -fmodule-mapper=CMakeFiles\\connogge.dir\\src\\main\\main.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\connogge.dir\\src\\main\\main.cpp.obj -c C:\\_Me_GitHub\\connogge\\src\\main\\main.cpp",
+  "file": "C:\\_Me_GitHub\\connogge\\src\\main\\main.cpp",
+  "output": "CMakeFiles\\connogge.dir\\src\\main\\main.cpp.obj"
+},
+{
+  "directory": "C:/_Me_GitHub/connogge/build",
+  "command": "C:\\Users\\ahmad\\MinGW\\mingw64\\bin\\c++.exe -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include -g -std=gnu++23 -fmodules-ts -fmodule-mapper=CMakeFiles\\connogge.dir\\src\\main\\window.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\connogge.dir\\src\\main\\window.cpp.obj -c C:\\_Me_GitHub\\connogge\\src\\main\\window.cpp",
+  "file": "C:\\_Me_GitHub\\connogge\\src\\main\\window.cpp",
+  "output": "CMakeFiles\\connogge.dir\\src\\main\\window.cpp.obj"
+},
+{
+  "directory": "C:/_Me_GitHub/connogge/build",
+  "command": "C:\\Users\\ahmad\\MinGW\\mingw64\\bin\\c++.exe -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include -g -std=gnu++23 -fmodules-ts -fmodule-mapper=CMakeFiles\\connogge.dir\\src\\main\\utils.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\connogge.dir\\src\\main\\utils.cpp.obj -c C:\\_Me_GitHub\\connogge\\src\\main\\utils.cpp",
+  "file": "C:\\_Me_GitHub\\connogge\\src\\main\\utils.cpp",
+  "output": "CMakeFiles\\connogge.dir\\src\\main\\utils.cpp.obj"
+},
+{
+  "directory": "C:/_Me_GitHub/connogge/build",
   "command": "C:\\Users\\ahmad\\MinGW\\mingw64\\bin\\c++.exe -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include -g -std=gnu++23 -fmodules-ts -fmodule-mapper=CMakeFiles\\connogge.dir\\_deps\\imgui-src\\imgui.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\connogge.dir\\_deps\\imgui-src\\imgui.cpp.obj -c C:\\_Me_GitHub\\connogge\\build\\_deps\\imgui-src\\imgui.cpp",
   "file": "C:\\_Me_GitHub\\connogge\\build\\_deps\\imgui-src\\imgui.cpp",
   "output": "CMakeFiles\\connogge.dir\\_deps\\imgui-src\\imgui.cpp.obj"
@@ -34,12 +52,6 @@
   "command": "C:\\Users\\ahmad\\MinGW\\mingw64\\bin\\c++.exe -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include -g -std=gnu++23 -fmodules-ts -fmodule-mapper=CMakeFiles\\connogge.dir\\_deps\\imgui-src\\backends\\imgui_impl_opengl3.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\connogge.dir\\_deps\\imgui-src\\backends\\imgui_impl_opengl3.cpp.obj -c C:\\_Me_GitHub\\connogge\\build\\_deps\\imgui-src\\backends\\imgui_impl_opengl3.cpp",
   "file": "C:\\_Me_GitHub\\connogge\\build\\_deps\\imgui-src\\backends\\imgui_impl_opengl3.cpp",
   "output": "CMakeFiles\\connogge.dir\\_deps\\imgui-src\\backends\\imgui_impl_opengl3.cpp.obj"
-},
-{
-  "directory": "C:/_Me_GitHub/connogge/build",
-  "command": "C:\\Users\\ahmad\\MinGW\\mingw64\\bin\\c++.exe -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include -g -std=gnu++23 -fmodules-ts -fmodule-mapper=CMakeFiles\\connogge.dir\\src\\main\\main.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\connogge.dir\\src\\main\\main.cpp.obj -c C:\\_Me_GitHub\\connogge\\src\\main\\main.cpp",
-  "file": "C:\\_Me_GitHub\\connogge\\src\\main\\main.cpp",
-  "output": "CMakeFiles\\connogge.dir\\src\\main\\main.cpp.obj"
 },
 {
   "directory": "C:/_Me_GitHub/connogge/build",

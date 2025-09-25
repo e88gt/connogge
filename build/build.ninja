@@ -49,6 +49,60 @@ cmake_ninja_workdir = C$:/_Me_GitHub/connogge/build/
 
 build cmake_object_order_depends_target_connogge: phony || cmake_object_order_depends_target_glfw
 
+build CMakeFiles/connogge.dir/src/main/main.cpp.obj.ddi: CXX_SCAN__connogge_Debug C$:/_Me_GitHub/connogge/src/main/main.cpp || cmake_object_order_depends_target_connogge
+  DEP_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.ddi
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
+  OBJ_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.ddi.i
+
+build CMakeFiles/connogge.dir/src/main/main.cpp.obj: CXX_COMPILER__connogge_scanned_Debug C$:/_Me_GitHub/connogge/src/main/main.cpp | CMakeFiles/connogge.dir/src/main/main.cpp.obj.modmap || cmake_object_order_depends_target_connogge CMakeFiles/connogge.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.modmap
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
+  OBJECT_DIR = CMakeFiles\connogge.dir
+  OBJECT_FILE_DIR = CMakeFiles\connogge.dir\src\main
+  dyndep = CMakeFiles/connogge.dir/CXX.dd
+
+build CMakeFiles/connogge.dir/src/main/window.cpp.obj.ddi: CXX_SCAN__connogge_Debug C$:/_Me_GitHub/connogge/src/main/window.cpp || cmake_object_order_depends_target_connogge
+  DEP_FILE = CMakeFiles\connogge.dir\src\main\window.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\connogge.dir\src\main\window.cpp.obj.ddi
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
+  OBJ_FILE = CMakeFiles\connogge.dir\src\main\window.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\connogge.dir\src\main\window.cpp.obj.ddi.i
+
+build CMakeFiles/connogge.dir/src/main/window.cpp.obj: CXX_COMPILER__connogge_scanned_Debug C$:/_Me_GitHub/connogge/src/main/window.cpp | CMakeFiles/connogge.dir/src/main/window.cpp.obj.modmap || cmake_object_order_depends_target_connogge CMakeFiles/connogge.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\connogge.dir\src\main\window.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\connogge.dir\src\main\window.cpp.obj.modmap
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
+  OBJECT_DIR = CMakeFiles\connogge.dir
+  OBJECT_FILE_DIR = CMakeFiles\connogge.dir\src\main
+  dyndep = CMakeFiles/connogge.dir/CXX.dd
+
+build CMakeFiles/connogge.dir/src/main/utils.cpp.obj.ddi: CXX_SCAN__connogge_Debug C$:/_Me_GitHub/connogge/src/main/utils.cpp || cmake_object_order_depends_target_connogge
+  DEP_FILE = CMakeFiles\connogge.dir\src\main\utils.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\connogge.dir\src\main\utils.cpp.obj.ddi
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
+  OBJ_FILE = CMakeFiles\connogge.dir\src\main\utils.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\connogge.dir\src\main\utils.cpp.obj.ddi.i
+
+build CMakeFiles/connogge.dir/src/main/utils.cpp.obj: CXX_COMPILER__connogge_scanned_Debug C$:/_Me_GitHub/connogge/src/main/utils.cpp | CMakeFiles/connogge.dir/src/main/utils.cpp.obj.modmap || cmake_object_order_depends_target_connogge CMakeFiles/connogge.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\connogge.dir\src\main\utils.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\connogge.dir\src\main\utils.cpp.obj.modmap
+  FLAGS = -g -std=gnu++23
+  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
+  OBJECT_DIR = CMakeFiles\connogge.dir
+  OBJECT_FILE_DIR = CMakeFiles\connogge.dir\src\main
+  dyndep = CMakeFiles/connogge.dir/CXX.dd
+
 build CMakeFiles/connogge.dir/_deps/imgui-src/imgui.cpp.obj.ddi: CXX_SCAN__connogge_Debug C$:/_Me_GitHub/connogge/build/_deps/imgui-src/imgui.cpp || cmake_object_order_depends_target_connogge
   DEP_FILE = CMakeFiles\connogge.dir\_deps\imgui-src\imgui.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\connogge.dir\_deps\imgui-src\imgui.cpp.obj.ddi
@@ -157,25 +211,7 @@ build CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.ob
   OBJECT_FILE_DIR = CMakeFiles\connogge.dir\_deps\imgui-src\backends
   dyndep = CMakeFiles/connogge.dir/CXX.dd
 
-build CMakeFiles/connogge.dir/src/main/main.cpp.obj.ddi: CXX_SCAN__connogge_Debug C$:/_Me_GitHub/connogge/src/main/main.cpp || cmake_object_order_depends_target_connogge
-  DEP_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.ddi
-  FLAGS = -g -std=gnu++23
-  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
-  OBJ_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.ddi.i
-
-build CMakeFiles/connogge.dir/src/main/main.cpp.obj: CXX_COMPILER__connogge_scanned_Debug C$:/_Me_GitHub/connogge/src/main/main.cpp | CMakeFiles/connogge.dir/src/main/main.cpp.obj.modmap || cmake_object_order_depends_target_connogge CMakeFiles/connogge.dir/CXX.dd
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\connogge.dir\src\main\main.cpp.obj.modmap
-  FLAGS = -g -std=gnu++23
-  INCLUDES = -IC:/_Me_GitHub/connogge/build/_deps/glm-src -IC:/_Me_GitHub/connogge/build/_deps/stb-src -IC:/_Me_GitHub/connogge/build/_deps/imgui-src -IC:/_Me_GitHub/connogge/include -IC:/_Me_GitHub/connogge/build/_deps/imgui-src/backends -IC:/_Me_GitHub/connogge/build/_deps/glfw-src/include
-  OBJECT_DIR = CMakeFiles\connogge.dir
-  OBJECT_FILE_DIR = CMakeFiles\connogge.dir\src\main
-  dyndep = CMakeFiles/connogge.dir/CXX.dd
-
-build CMakeFiles/connogge.dir/CXX.dd | C$:/_Me_GitHub/connogge/build/CMakeFiles/connogge.dir/CXXModules.json CMakeFiles/connogge.dir/_deps/imgui-src/imgui.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/imgui_draw.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/imgui_tables.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/imgui_widgets.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj.modmap CMakeFiles/connogge.dir/src/main/main.cpp.obj.modmap: CXX_DYNDEP__connogge_Debug CMakeFiles/connogge.dir/_deps/imgui-src/imgui.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/imgui_draw.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/imgui_tables.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/imgui_widgets.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj.ddi CMakeFiles/connogge.dir/src/main/main.cpp.obj.ddi | C$:/_Me_GitHub/connogge/build/CMakeFiles/connogge.dir/CXXDependInfo.json
+build CMakeFiles/connogge.dir/CXX.dd | C$:/_Me_GitHub/connogge/build/CMakeFiles/connogge.dir/CXXModules.json CMakeFiles/connogge.dir/src/main/main.cpp.obj.modmap CMakeFiles/connogge.dir/src/main/window.cpp.obj.modmap CMakeFiles/connogge.dir/src/main/utils.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/imgui.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/imgui_draw.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/imgui_tables.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/imgui_widgets.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj.modmap CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj.modmap: CXX_DYNDEP__connogge_Debug CMakeFiles/connogge.dir/src/main/main.cpp.obj.ddi CMakeFiles/connogge.dir/src/main/window.cpp.obj.ddi CMakeFiles/connogge.dir/src/main/utils.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/imgui.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/imgui_draw.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/imgui_tables.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/imgui_widgets.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj.ddi CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj.ddi | C$:/_Me_GitHub/connogge/build/CMakeFiles/connogge.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -185,7 +221,7 @@ build CMakeFiles/connogge.dir/CXX.dd | C$:/_Me_GitHub/connogge/build/CMakeFiles/
 #############################################
 # Link the executable C:\_Me_GitHub\connogge\bin\connogge.exe
 
-build C$:/_Me_GitHub/connogge/bin/connogge.exe: CXX_EXECUTABLE_LINKER__connogge_Debug CMakeFiles/connogge.dir/_deps/imgui-src/imgui.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/imgui_draw.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/imgui_tables.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/imgui_widgets.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj CMakeFiles/connogge.dir/src/main/main.cpp.obj | _deps/glfw-build/src/libglfw3.a || _deps/glfw-build/src/libglfw3.a
+build C$:/_Me_GitHub/connogge/bin/connogge.exe: CXX_EXECUTABLE_LINKER__connogge_Debug CMakeFiles/connogge.dir/src/main/main.cpp.obj CMakeFiles/connogge.dir/src/main/window.cpp.obj CMakeFiles/connogge.dir/src/main/utils.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/imgui.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/imgui_draw.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/imgui_tables.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/imgui_widgets.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_glfw.cpp.obj CMakeFiles/connogge.dir/_deps/imgui-src/backends/imgui_impl_opengl3.cpp.obj | _deps/glfw-build/src/libglfw3.a || _deps/glfw-build/src/libglfw3.a
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = _deps/glfw-build/src/libglfw3.a  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

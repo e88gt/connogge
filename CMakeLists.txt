@@ -53,8 +53,10 @@ set(imgui_SOURCE
 )
 
 add_executable(connogge
-	${imgui_SOURCE}
 	src/main/main.cpp
+	src/main/window.cpp
+	src/main/utils.cpp
+	${imgui_SOURCE}
 )
 
 target_include_directories(connogge PRIVATE

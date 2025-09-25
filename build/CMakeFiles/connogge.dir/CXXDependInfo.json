@@ -60,6 +60,16 @@
 		{
 			"language" : "CXX",
 			"source" : "C:/_Me_GitHub/connogge/src/main/main.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/main/utils.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/main/utils.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/main/window.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/main/window.cpp"
 		}
 	}
 }
