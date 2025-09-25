@@ -3,7 +3,7 @@
 #include <iostream>
 #include <stdexcept>
 
-static void windowResizeCallback(GLFWwindow *window, int width, int height)
+static void windowResizeCallback(GLFWwindow *window, const int width, const int height)
 {
 	Window *self = static_cast<Window*>(glfwGetWindowUserPointer(window));
 	self->callbackSetSize(width, height);
@@ -12,7 +12,7 @@ static void windowResizeCallback(GLFWwindow *window, int width, int height)
 Window::Window(const std::string &title)
 	: size{ 1280, 720 }
 {
-	if(!glfwInit())
+	if (!glfwInit())
 	{
 		throw std::runtime_error{ "Failed to initialize window" };
 	}
@@ -29,7 +29,7 @@ Window::Window(const std::string &title)
 	
 	handle = glfwCreateWindow(size.x, size.y, title.c_str(), nullptr, nullptr);
 	
-	if(!handle)
+	if (!handle)
 	{
 		throw std::runtime_error{ "Failed to create window" };
 	}

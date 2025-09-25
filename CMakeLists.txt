@@ -55,7 +55,6 @@ set(imgui_SOURCE
 add_executable(connogge
 	src/main/main.cpp
 	src/main/window.cpp
-	src/main/utils.cpp
 	${imgui_SOURCE}
 )
 
