@@ -1,8 +1,10 @@
 #include "main.hpp"
 
+#include <iostream>
+
 int main()
 {
-	std::cout << "Does he know\n";
+	std::cout << "Hello, world!\n";
 	
 	return 0;
 }
