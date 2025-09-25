@@ -6,18 +6,16 @@
 
 int main()
 {
-	Window_T window;
+	Window window = Window{ "" };
 	
-	window_create(&window);
-	
-	while(!window_should_close(&window))
+	while(!window.shouldClose())
 	{
-		window_poll_events(&window);
+		window.pollEvents();
 		
-		window_swap_buffers(&window);
+		window.swapBuffers();
 	}
 	
-	window_destroy(&window);
+	window.~Window();
 	
 	return 0;
 }

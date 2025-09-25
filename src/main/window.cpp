@@ -1,22 +1,22 @@
 #include "window.hpp"
 
-#include "utils.hpp"
+#include <iostream>
+#include <stdexcept>
 
-static void _window_resize_callback(GLFWwindow *handle, const int width, const int height)
+static void windowResizeCallback(GLFWwindow *window, int width, int height)
 {
-	Window_T *self = (Window_T*) glfwGetWindowUserPointer(handle);
-
-	self->size.x = width;
-	self->size.y = height;
+	Window *self = static_cast<Window*>(glfwGetWindowUserPointer(window));
+	self->callbackSetSize(width, height);
 }
 
-void window_create(Window_T *self)
+Window::Window(const std::string &title)
+	: size{ 1280, 720 }
 {
-	if (!glfwInit())
+	if(!glfwInit())
 	{
-		ERROR("Failed to initialize window");
+		throw std::runtime_error{ "Failed to initialize window" };
 	}
-
+	
 	glfwDefaultWindowHints();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
@@ -26,43 +26,48 @@ void window_create(Window_T *self)
 	glfwWindowHint(GLFW_MAXIMIZED, GLFW_TRUE);
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
 	glfwWindowHint(GLFW_VISIBLE, GLFW_TRUE);
-
-	self->size.x = 1280;
-	self->size.y = 720;
-	self->handle = glfwCreateWindow(self->size.x, self->size.y, "Connogge", nullptr, nullptr);
-
-	if (!self->handle)
+	
+	handle = glfwCreateWindow(size.x, size.y, title.c_str(), nullptr, nullptr);
+	
+	if(!handle)
 	{
-		ERROR("Failed to create window");
+		throw std::runtime_error{ "Failed to create window" };
 	}
 	
-	glfwSetWindowUserPointer(self->handle, (void*) self);
-	glfwSetFramebufferSizeCallback(self->handle, _window_resize_callback);
-	glfwMakeContextCurrent(self->handle);
+	glfwSetWindowUserPointer(handle, this);
+	glfwSetFramebufferSizeCallback(handle, windowResizeCallback);
+	glfwMakeContextCurrent(handle);
 }
 
-void window_poll_events(const Window_T *)
+Window::~Window()
+{
+	glfwSetFramebufferSizeCallback(handle, nullptr);
+	glfwDestroyWindow(handle);
+	glfwTerminate();
+}
+
+void Window::pollEvents() const
 {
 	glfwPollEvents();
 }
 
-void window_swap_buffers(const Window_T *self)
+void Window::swapBuffers() const
 {
-	glfwSwapBuffers(self->handle);
+	glfwSwapBuffers(handle);
 }
 
-void window_destroy(const Window_T *self)
+bool Window::shouldClose() const
 {
-	glfwDestroyWindow(self->handle);
-	glfwTerminate();
+	return glfwWindowShouldClose(handle);
 }
 
-bool window_should_close(const Window_T *self)
+const glm::ivec2 &Window::getSize() const
 {
-	return glfwWindowShouldClose(self->handle);
+	return size;
 }
 
-const glm::ivec2 &window_get_size(const Window_T *self)
+void Window::callbackSetSize(const int width, const int height)
 {
-	return self->size;
+	size.x = width;
+	size.y = height;
 }
