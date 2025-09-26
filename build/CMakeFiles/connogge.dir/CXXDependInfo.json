@@ -56,20 +56,35 @@
 			"language" : "CXX",
 			"source" : "C:/_Me_GitHub/connogge/build/_deps/imgui-src/imgui_widgets.cpp"
 		},
-		"CMakeFiles/connogge.dir/src/main/main.cpp.obj" : 
+		"CMakeFiles/connogge.dir/src/graphics/Renderer.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "C:/_Me_GitHub/connogge/src/main/main.cpp"
+			"source" : "C:/_Me_GitHub/connogge/src/graphics/Renderer.cpp"
 		},
-		"CMakeFiles/connogge.dir/src/main/utils.cpp.obj" : 
+		"CMakeFiles/connogge.dir/src/graphics/Window.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "C:/_Me_GitHub/connogge/src/main/utils.cpp"
+			"source" : "C:/_Me_GitHub/connogge/src/graphics/Window.cpp"
 		},
-		"CMakeFiles/connogge.dir/src/main/window.cpp.obj" : 
+		"CMakeFiles/connogge.dir/src/main/Connogge.cpp.obj" : 
 		{
 			"language" : "CXX",
-			"source" : "C:/_Me_GitHub/connogge/src/main/window.cpp"
+			"source" : "C:/_Me_GitHub/connogge/src/main/Connogge.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/main/Engine.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/main/Engine.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/main/Main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/main/Main.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/main/Time.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/main/Time.cpp"
 		}
 	}
 }

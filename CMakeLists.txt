@@ -53,8 +53,13 @@ set(imgui_SOURCE
 )
 
 add_executable(connogge
-	src/main/main.cpp
-	src/main/window.cpp
+	src/main/Main.cpp
+	src/main/Engine.cpp
+	src/main/Connogge.cpp
+	src/graphics/Window.cpp
+	src/graphics/Renderer.cpp
+	src/main/Time.cpp
+	src/deps/glad.c
 	${imgui_SOURCE}
 )
 

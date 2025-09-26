@@ -1,21 +1,11 @@
-#include "main.hpp"
+#include "Main.hpp"
 
-#include <iostream>
-
-#include "window.hpp"
+#include "Engine.hpp"
 
 int main()
 {
-	Window window = Window{ "" };
-	
-	while(!window.shouldClose())
-	{
-		window.pollEvents();
-		
-		window.swapBuffers();
-	}
-	
-	window.~Window();
+	Engine engine = Engine{};
+	engine.run();
 	
 	return 0;
 }

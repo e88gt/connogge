@@ -1,5 +1,5 @@
-#ifndef _WINDOW_HPP
-#define _WINDOW_HPP
+#ifndef WINDOW_HPP
+#define WINDOW_HPP
 
 #include <string>
 
@@ -20,9 +20,9 @@ public:
 	
 	void swapBuffers() const;
 	
-	bool shouldClose() const;
+	[[nodiscard]] bool shouldClose() const;
 	
-	const glm::ivec2 &getSize() const;
+	[[nodiscard]] const glm::ivec2 &getSize() const;
 	
 	void callbackSetSize(int width, int height);
 	
@@ -31,4 +31,4 @@ private:
 	glm::ivec2 size;
 };
 
-#endif // _WINDOW_HPP
+#endif // WINDOW_HPP

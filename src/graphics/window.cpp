@@ -1,4 +1,4 @@
-#include "../main/window.hpp"
+#include "Window.hpp"
 
 #include <iostream>
 #include <stdexcept>
@@ -23,9 +23,9 @@ Window::Window(const std::string &title)
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
 	glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GLFW_TRUE);
-	glfwWindowHint(GLFW_MAXIMIZED, GLFW_TRUE);
+	glfwWindowHint(GLFW_MAXIMIZED, GLFW_FALSE);
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
-	glfwWindowHint(GLFW_VISIBLE, GLFW_TRUE);
+	glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
 	
 	handle = glfwCreateWindow(size.x, size.y, title.c_str(), nullptr, nullptr);
 	
@@ -33,9 +33,11 @@ Window::Window(const std::string &title)
 	{
 		throw std::runtime_error{ "Failed to create window" };
 	}
-	
+
 	glfwSetWindowUserPointer(handle, this);
 	glfwSetFramebufferSizeCallback(handle, windowResizeCallback);
+	glfwMaximizeWindow(handle);
+	glfwShowWindow(handle);
 	glfwMakeContextCurrent(handle);
 }
 
