@@ -52,13 +52,13 @@ endif()
 
 execute_process(
   COMMAND "C:/Users/ahmad/AppData/Local/Programs/Git/cmd/git.exe"
-          checkout "master" --
+          checkout "v1.92.3" --
   WORKING_DIRECTORY "C:/_Me_GitHub/connogge/build/_deps/imgui-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'master'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v1.92.3'")
 endif()
 
 set(init_submodules TRUE)

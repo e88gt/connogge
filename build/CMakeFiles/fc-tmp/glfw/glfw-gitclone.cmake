@@ -52,13 +52,13 @@ endif()
 
 execute_process(
   COMMAND "C:/Users/ahmad/AppData/Local/Programs/Git/cmd/git.exe"
-          checkout "latest" --
+          checkout "3.4" --
   WORKING_DIRECTORY "C:/_Me_GitHub/connogge/build/_deps/glfw-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'latest'")
+  message(FATAL_ERROR "Failed to checkout tag: '3.4'")
 endif()
 
 set(init_submodules TRUE)

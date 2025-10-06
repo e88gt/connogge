@@ -1,3 +1,12 @@
-//
-// Created by ahmad on 10/6/2025.
-//
+#include "engine/graphics/window.hpp"
+
+int main()
+{
+	const Window window = Window{ "Test" };
+
+	while (!window.ShouldClose())
+	{
+		window.PollEvents();
+		window.SwapBuffers();
+	}
+}
