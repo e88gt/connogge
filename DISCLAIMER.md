@@ -4,7 +4,7 @@ This repository is provided "AS IS", without warranty of any kind, express or im
 
 The author(s) shall not be held liable for any claim, damages, or other liability—whether in an action of contract, tort, or otherwise—arising from, out of, or in connection with the software or the use or other dealings in the repository.
 
-Use of this repository is at your own risk. no guarantee is made regarding correctness, security, performance, or fitness for any specific application.
+Use of this repository is at your own risk. No guarantee is made regarding correctness, security, performance, or fitness for any specific application.
 
 This repository may lack standard GitHub conventions, including but not limited to:
 
