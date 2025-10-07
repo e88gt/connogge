@@ -17,7 +17,9 @@
 		"_deps\\glm-src",
 		"_deps\\stb-src",
 		"_deps\\imgui-src",
+		"C:\\_Me_GitHub\\connogge\\src",
 		"C:\\_Me_GitHub\\connogge\\include",
+		"C:\\_Me_GitHub\\connogge\\include\\glad",
 		"_deps\\imgui-src\\backends",
 		"_deps\\glfw-src\\include"
 	],
@@ -55,6 +57,31 @@
 		{
 			"language" : "CXX",
 			"source" : "C:/_Me_GitHub/connogge/build/_deps/imgui-src/imgui_widgets.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/engine/graphics/element_buffer.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/engine/graphics/element_buffer.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/engine/graphics/renderer.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/engine/graphics/renderer.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/engine/graphics/vertex_buffer.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/engine/graphics/vertex_buffer.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/engine/graphics/window.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/engine/graphics/window.cpp"
+		},
+		"CMakeFiles/connogge.dir/src/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/_Me_GitHub/connogge/src/main.cpp"
 		}
 	}
 }

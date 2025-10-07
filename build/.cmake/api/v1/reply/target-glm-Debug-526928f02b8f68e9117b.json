@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "_deps/glm-build/glm/libglmd.a"
+			"path" : "_deps/glm-build/glm/libglm.a"
 		}
 	],
 	"backtrace" : 1,
@@ -70,7 +70,7 @@
 	],
 	"id" : "glm::@ce54d98d7b326a3e12a8",
 	"name" : "glm",
-	"nameOnDisk" : "libglmd.a",
+	"nameOnDisk" : "libglm.a",
 	"paths" : 
 	{
 		"build" : "_deps/glm-build/glm",

@@ -1,16 +1,27 @@
-//
-// Created by ahmad on 10/7/2025.
-//
-
 #ifndef ELEMENT_BUFFER_HPP
 #define ELEMENT_BUFFER_HPP
 
+#include <glad/glad.h>
 
+#include "engine/utils/types.hpp"
 
-class ElementBuffer {
+class ElementBuffer
+{
+public:
+	explicit ElementBuffer();
 
+	~ElementBuffer();
+
+	void Bind() const;
+
+	void Data(const List<GLuint> &indices) const;
+
+	[[nodiscard]] GLuint GetHandle() const;
+
+	[[nodiscard]] operator GLuint() const;
+
+private:
+	const GLuint m_handle;
 };
-
-
 
 #endif //ELEMENT_BUFFER_HPP

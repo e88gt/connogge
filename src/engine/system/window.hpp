@@ -1,6 +1,8 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
+#include <glad/glad.h>
+#define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 
 #include "engine/utils/types.hpp"
@@ -12,13 +14,17 @@ public:
 
 	~Window();
 
-	void PollEvents() const;
+	void MakeCurrent() const;
 
 	void SwapBuffers() const;
 
 	[[nodiscard]] bool ShouldClose() const;
 
 	Vector2i &Size();
+
+	[[nodiscard]] const Vector2i &GetSize() const;
+
+	static void PollEvents();
 
 private:
 	GLFWwindow *m_handle;

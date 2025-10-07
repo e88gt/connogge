@@ -2746,18 +2746,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "GLM_ENABLE_SIMD_NEON",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable ARM NEON optimizations"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "GLM_ENABLE_SIMD_SSE2",
 			"properties" : 
 			[

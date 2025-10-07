@@ -63,13 +63,18 @@ Window::Window(const String &title)
 
 	m_handle = glfwCreateWindow(m_size.x, m_size.y, title.c_str(), nullptr, nullptr);
 
-	windows_counter++;
+	::windows_counter++;
+
+	const GLFWvidmode *vidmode = glfwGetVideoMode(glfwGetPrimaryMonitor());
+	const int x = (vidmode->width - m_size.x) / 2;
+	const int y = (vidmode->height - m_size.y) / 2;
+	glfwSetWindowPos(m_handle, x, y);
 
 	glfwSetWindowUserPointer(m_handle, this);
 	glfwSetFramebufferSizeCallback(m_handle, ::SizeCallback);
 
 	glfwShowWindow(m_handle);
-	glfwMakeContextCurrent(m_handle);
+	MakeCurrent();
 	glfwSwapInterval(1);
 }
 
@@ -79,15 +84,20 @@ Window::~Window()
 
 	glfwDestroyWindow(m_handle);
 
-	windows_counter--;
+	::windows_counter--;
 
-	if (windows_counter == 0)
+	if (::windows_counter == 0)
 	{
-		TerminateWindow();
+		::TerminateWindow();
 	}
 }
 
-void Window::PollEvents() const
+void Window::MakeCurrent() const
+{
+	glfwMakeContextCurrent(m_handle);
+}
+
+void Window::PollEvents()
 {
 	glfwPollEvents();
 }
@@ -103,6 +113,11 @@ bool Window::ShouldClose() const
 }
 
 Vector2i &Window::Size()
+{
+	return m_size;
+}
+
+const Vector2i &Window::GetSize() const
 {
 	return m_size;
 }

@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "_deps/glfw-build/src/libglfw3d.a"
+			"path" : "_deps/glfw-build/src/libglfw3.a"
 		}
 	],
 	"backtrace" : 1,
@@ -198,7 +198,7 @@
 		}
 	},
 	"name" : "glfw",
-	"nameOnDisk" : "libglfw3d.a",
+	"nameOnDisk" : "libglfw3.a",
 	"paths" : 
 	{
 		"build" : "_deps/glfw-build/src",
