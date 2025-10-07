@@ -11,7 +11,7 @@ namespace
 }
 
 VertexArray::VertexArray()
-	: m_handle{ create_vertex_array() }
+	: m_handle{ ::create_vertex_array() }
 {
 }
 
@@ -25,9 +25,9 @@ void VertexArray::Bind() const
 	glBindVertexArray(m_handle);
 }
 
-void VertexArray::SetVertexBuffer(const VertexBuffer &vb, const GLsizei stride) const
+void VertexArray::SetVertexBuffer(const VertexBuffer &vb) const
 {
-	glVertexArrayVertexBuffer(m_handle, 0, vb, 0, stride);
+	glVertexArrayVertexBuffer(m_handle, 0, vb, 0, sizeof(Vertex));
 }
 
 void VertexArray::SetElementBuffer(const ElementBuffer &eb) const

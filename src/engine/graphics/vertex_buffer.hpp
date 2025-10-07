@@ -3,7 +3,7 @@
 
 #include <glad/glad.h>
 
-#include "engine/graphics/vertex.hpp"
+#include "engine/mesh/vertex.hpp"
 #include "engine/utils/types.hpp"
 
 class VertexBuffer
@@ -15,7 +15,7 @@ public:
 
 	void Bind() const;
 
-	void Data(const List<Vertex> &vertices) const;
+	void StoreData(const List<Vertex> &vertices) const;
 
 	[[nodiscard]] GLuint GetHandle() const;
 

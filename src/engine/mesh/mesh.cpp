@@ -1,4 +1,4 @@
-#include "../graphics/mesh.hpp"
+#include "mesh.hpp"
 
 Mesh::Mesh(const List<Vertex> &vertices, const List<GLuint> &indices)
 	: m_size{ static_cast<GLsizei>(indices.size()) }, m_vertex_array{}, m_vertex_buffer{}, m_element_buffer{}

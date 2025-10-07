@@ -1,7 +1,7 @@
 #ifndef RENDERER_HPP
 #define RENDERER_HPP
 
-#include "vertex_array.hpp"
+#include "engine/mesh/mesh.hpp"
 #include "engine/utils/types.hpp"
 
 class Renderer
@@ -17,7 +17,7 @@ public:
 
 	void ClearBuffer() const;
 
-	void Render(const VertexArray &va, const List<GLuint> &indices) const;
+	void Render(const Mesh &mesh) const;
 };
 
 #endif //RENDERER_HPP

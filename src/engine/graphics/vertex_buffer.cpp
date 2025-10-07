@@ -11,7 +11,7 @@ namespace
 }
 
 VertexBuffer::VertexBuffer()
-	: m_handle{ create_vertex_buffer() }
+	: m_handle{ ::create_vertex_buffer() }
 {
 }
 
@@ -25,7 +25,7 @@ void VertexBuffer::Bind() const
 	glBindBuffer(GL_ARRAY_BUFFER, m_handle);
 }
 
-void VertexBuffer::Data(const List<Vertex> &vertices) const
+void VertexBuffer::StoreData(const List<Vertex> &vertices) const
 {
 	glNamedBufferData(m_handle, vertices.size() * sizeof(Vertex), vertices.data(), GL_STATIC_DRAW);
 }

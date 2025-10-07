@@ -15,7 +15,7 @@ public:
 
 	void Bind() const;
 
-	void SetVertexBuffer(const VertexBuffer &vb, GLsizei stride) const;
+	void SetVertexBuffer(const VertexBuffer &vb) const;
 
 	void SetElementBuffer(const ElementBuffer &eb) const;
 

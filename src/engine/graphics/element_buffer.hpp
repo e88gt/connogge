@@ -14,7 +14,7 @@ public:
 
 	void Bind() const;
 
-	void Data(const List<GLuint> &indices) const;
+	void StoreData(const List<GLuint> &indices) const;
 
 	[[nodiscard]] GLuint GetHandle() const;
 

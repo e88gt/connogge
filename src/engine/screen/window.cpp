@@ -1,11 +1,11 @@
-#include "../system/window.hpp"
+#include "window.hpp"
 
 namespace
 {
 	bool init = false;
 	unsigned int windows_counter = 0;
 
-	void InitWindow()
+	void init_window()
 	{
 		if (init)
 		{
@@ -25,7 +25,7 @@ namespace
 		}
 	}
 
-	void TerminateWindow()
+	void terminate_window()
 	{
 		if (!init)
 		{
@@ -38,7 +38,7 @@ namespace
 		init = false;
 	}
 
-	void SizeCallback(GLFWwindow *window, int width, int height)
+	void size_callback(GLFWwindow *window, int width, int height)
 	{
 		Window *self = static_cast<Window*>(glfwGetWindowUserPointer(window));
 		self->Size() = { width, height };
@@ -50,7 +50,7 @@ Window::Window(const String &title)
 {
 	if (!::init)
 	{
-		::InitWindow();
+		::init_window();
 	}
 
 	glfwDefaultWindowHints();
@@ -63,6 +63,11 @@ Window::Window(const String &title)
 
 	m_handle = glfwCreateWindow(m_size.x, m_size.y, title.c_str(), nullptr, nullptr);
 
+	if (!m_handle)
+	{
+		throw RuntimeError{ "Failed to create window" };
+	}
+
 	::windows_counter++;
 
 	const GLFWvidmode *vidmode = glfwGetVideoMode(glfwGetPrimaryMonitor());
@@ -71,7 +76,7 @@ Window::Window(const String &title)
 	glfwSetWindowPos(m_handle, x, y);
 
 	glfwSetWindowUserPointer(m_handle, this);
-	glfwSetFramebufferSizeCallback(m_handle, ::SizeCallback);
+	glfwSetFramebufferSizeCallback(m_handle, ::size_callback);
 
 	glfwShowWindow(m_handle);
 	MakeCurrent();
@@ -88,7 +93,7 @@ Window::~Window()
 
 	if (::windows_counter == 0)
 	{
-		::TerminateWindow();
+		::terminate_window();
 	}
 }
 

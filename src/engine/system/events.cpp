@@ -1,3 +1,8 @@
-//
-// Created by ahmad on 10/7/2025.
-//
+#include "events.hpp"
+
+#include <GLFW/glfw3.h>
+
+void Events::PollAll()
+{
+	glfwPollEvents();
+}

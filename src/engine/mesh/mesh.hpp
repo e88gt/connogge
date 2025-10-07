@@ -1,6 +1,7 @@
 #ifndef MESH_HPP
 #define MESH_HPP
-#include "../graphics/vertex_array.hpp"
+
+#include "engine/graphics/vertex_array.hpp"
 
 class Mesh
 {

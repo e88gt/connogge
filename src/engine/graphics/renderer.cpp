@@ -5,7 +5,7 @@
 
 namespace
 {
-	void renderer_error_callback(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *message, const void *userParam)
+	void renderer_error_callback(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *message, const void *user_param)
 	{
 		throw RuntimeError{ message };
 	}
@@ -41,8 +41,8 @@ void Renderer::ClearBuffer() const
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 }
 
-void Renderer::Render(const VertexArray &va, const List<GLuint> &indices) const
+void Renderer::Render(const Mesh &mesh) const
 {
-	va.Bind();
-	glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, nullptr);
+	mesh.GetVertexArray().Bind();
+	glDrawElements(GL_TRIANGLES, mesh.GetSize(), GL_UNSIGNED_INT, nullptr);
 }

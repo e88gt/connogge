@@ -11,7 +11,7 @@ namespace
 }
 
 ElementBuffer::ElementBuffer()
-	: m_handle{ create_element_buffer() }
+	: m_handle{ ::create_element_buffer() }
 {
 }
 
@@ -25,7 +25,7 @@ void ElementBuffer::Bind() const
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_handle);
 }
 
-void ElementBuffer::Data(const List<GLuint> &indices) const
+void ElementBuffer::StoreData(const List<GLuint> &indices) const
 {
 	glNamedBufferData(m_handle, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
 }
