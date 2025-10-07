@@ -4,6 +4,7 @@
 #include "system/events.hpp"
 #include "screen/window.hpp"
 #include "graphics/renderer.hpp"
+#include "core/core.hpp"
 
 class Engine
 {
@@ -15,14 +16,21 @@ public:
 	void Run();
 
 private:
-	void OnEvent(const Events &event);
+	void OnEvent();
 
 	void OnUpdate(double delta);
 
-	void OnRender(const Renderer &renderer);
+	void OnRender();
+
+	void Start();
+
+	void Stop();
 
 private:
-	const Window window;
+	bool m_running;
+	Core m_core;
+	const Window m_window;
+	const Renderer m_renderer;
 };
 
 #endif //ENGINE_HPP

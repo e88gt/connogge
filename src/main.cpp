@@ -1,11 +1,26 @@
-#include "engine/system/events.hpp"
-#include "engine/screen/window.hpp"
-#include "engine/graphics/renderer.hpp"
+#include "engine/engine.hpp"
+#include "engine/shader/shader_program.hpp"
+#include "engine/utils/file_utils.hpp"
 
 int main()
 {
-	const Window window{ "green" };
+	const Window window{ "connogge" };
 	const Renderer renderer{};
+
+	const String vertex_source{ File::LoadAsString("") };
+	const Shader vertex_shader{ ShaderType::VERTEX };
+	vertex_shader.SetSource(vertex_source);
+	vertex_shader.Compile();
+
+	const String fragment_source{ File::LoadAsString("") };
+	const Shader fragment_shader{ ShaderType::FRAGMENT };
+	fragment_shader.SetSource(fragment_source);
+	fragment_shader.Compile();
+
+	const ShaderProgram shader_program{};
+	shader_program.AttachShader(vertex_shader);
+	shader_program.AttachShader(fragment_shader);
+	shader_program.Link();
 
 	List<Vertex> vertices{};
 	vertices.push_back({ { -0.5f, +0.5f, 0.0f }, { 0.0f, 1.0f } });

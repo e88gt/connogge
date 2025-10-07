@@ -102,11 +102,6 @@ void Window::MakeCurrent() const
 	glfwMakeContextCurrent(m_handle);
 }
 
-void Window::PollEvents()
-{
-	glfwPollEvents();
-}
-
 void Window::SwapBuffers() const
 {
 	glfwSwapBuffers(m_handle);

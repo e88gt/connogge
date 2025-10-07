@@ -24,8 +24,6 @@ public:
 
 	[[nodiscard]] const Vector2i &GetSize() const;
 
-	static void PollEvents();
-
 private:
 	GLFWwindow *m_handle;
 	Vector2i m_size;
