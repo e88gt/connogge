@@ -1,4 +1,5 @@
 #include "engine/engine.hpp"
+#include "engine/screen/camera_3d.hpp"
 #include "engine/shader/shader_program.hpp"
 #include "engine/utils/file_utils.hpp"
 #include "engine/utils/time.hpp"
@@ -40,7 +41,10 @@ int main()
 	indices.emplace_back(3);
 	indices.emplace_back(0);
 
+	Camera3D camera{};
 	Transformation3D transformation{};
+
+	camera.Position().z = 1.0f;
 
 	const Mesh mesh{ vertices, indices };
 
@@ -48,8 +52,8 @@ int main()
 
 	while (!window.ShouldClose())
 	{
-		double current_time = Time::Nano();
-		double delta = (current_time - last_time) / Time::NS_PER_SEC;
+		const double current_time = Time::Nano();
+		const double delta = (current_time - last_time) / Time::NS_PER_SEC;
 		last_time = current_time;
 
 		Events::PollAll();
@@ -58,8 +62,10 @@ int main()
 		renderer.ClearColor({ 0.65f, 1.0f, 0.65f });
 		renderer.ClearBuffer();
 
-		transformation.Rotation().x += 0.1f * delta;
+		transformation.Rotation().x += 50.0f * delta;
 		shader_program.SetUniformMatrix4f(0, transformation.GetTransformation());
+		shader_program.SetUniformMatrix4f(1, camera.GetViewMatrix());
+		shader_program.SetUniformMatrix4f(2, camera.GetProjection(window.GetSize()));
 		shader_program.Use();
 		renderer.Render(mesh);
 

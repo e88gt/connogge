@@ -12,7 +12,7 @@ layout (location = 2) uniform mat4 U_Proj;
 void main()
 {
     B_UV = I_UV;
-    const vec4 result = U_Object * vec4(I_Position, 1.0f);
+    const vec4 result = U_Proj * U_View * U_Object * vec4(I_Position, 1.0f);
     // const vec4 result = vec4(I_Position, 1.0f);
     gl_Position = result;
 }

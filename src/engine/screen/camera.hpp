@@ -1,16 +1,19 @@
-//
-// Created by ahmad on 10/8/2025.
-//
-
 #ifndef CAMERA_HPP
 #define CAMERA_HPP
 
+#include "engine/utils/types.hpp"
 
+class Camera
+{
+protected:
+	Camera();
 
-class Camera {
+public:
+	virtual ~Camera();
 
+	[[nodiscard]] virtual Matrix4f GetViewMatrix() = 0;
+
+	[[nodiscard]] virtual Matrix4f GetProjection(const Vector2f &size) = 0;
 };
-
-
 
 #endif //CAMERA_HPP
