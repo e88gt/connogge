@@ -13,7 +13,7 @@ namespace File
 {
 	inline String LoadAsString(const String &path)
 	{
-		const InputFileStream file{ path, std::ifstream::in | std::ifstream::binary | std::ifstream::ate };
+		const InputFileStream file{ path };
 
 		if (!file)
 		{

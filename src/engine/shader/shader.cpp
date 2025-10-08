@@ -12,7 +12,8 @@ Shader::~Shader()
 
 void Shader::SetSource(const String &source) const
 {
-	glShaderSource(m_handle, 1, reinterpret_cast<const GLchar* const *>(source.c_str()), nullptr);
+	const char *source_c_str = source.c_str();
+	glShaderSource(m_handle, 1, &source_c_str, nullptr);
 }
 
 void Shader::Compile() const

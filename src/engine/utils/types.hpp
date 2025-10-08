@@ -14,6 +14,9 @@ template<typename T> using List = std::vector<T>;
 using Vector2i = glm::ivec2;
 using Vector2f = glm::fvec2;
 using Vector3f = glm::fvec3;
+
 using Color3f = glm::fvec3;
+
+using Matrix4f = glm::fmat4x4;
 
 #endif // TYPES_HPP

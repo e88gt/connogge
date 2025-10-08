@@ -18,6 +18,8 @@ public:
 
 	void Use() const;
 
+	void SetUniformMatrix4f(GLint location, const Matrix4f &matrix) const;
+
 	[[nodiscard]] GLuint GetHandle() const;
 
 	[[nodiscard]] operator GLuint() const;

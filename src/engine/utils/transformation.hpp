@@ -1,16 +1,17 @@
-//
-// Created by ahmad on 10/7/2025.
-//
-
 #ifndef TRANSFORMATION_HPP
 #define TRANSFORMATION_HPP
 
+#include "types.hpp"
 
+class Transformation
+{
+protected:
+	explicit Transformation();
 
-class Transformation {
+public:
+	virtual ~Transformation();
 
+	[[nodiscard]] virtual Matrix4f GetTransformation() = 0;
 };
-
-
 
 #endif //TRANSFORMATION_HPP

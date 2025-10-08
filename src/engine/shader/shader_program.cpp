@@ -1,5 +1,9 @@
 #include "shader_program.hpp"
 
+#include <algorithm>
+
+#include "glm/gtc/type_ptr.hpp"
+
 ShaderProgram::ShaderProgram()
 	: m_handle{ glCreateProgram() }
 {
@@ -23,6 +27,11 @@ void ShaderProgram::Link() const
 void ShaderProgram::Use() const
 {
 	glUseProgram(m_handle);
+}
+
+void ShaderProgram::SetUniformMatrix4f(const GLint location, const Matrix4f &matrix) const
+{
+	glProgramUniformMatrix4fv(m_handle, location, 1, GL_FALSE, glm::value_ptr(matrix));
 }
 
 GLuint ShaderProgram::GetHandle() const
