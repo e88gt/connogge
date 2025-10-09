@@ -1,4 +1,5 @@
 #include "engine/engine.hpp"
+#include "engine/image/texture.hpp"
 #include "engine/screen/camera_3d.hpp"
 #include "engine/shader/shader_program.hpp"
 #include "engine/utils/file_utils.hpp"
@@ -47,6 +48,7 @@ int main()
 	camera.Position().z = 1.0f;
 
 	const Mesh mesh{ vertices, indices };
+	const Texture texture{ "assets/textures/Test1.png", true };
 
 	double last_time = Time::Nano();
 
@@ -66,7 +68,11 @@ int main()
 		shader_program.SetUniformMatrix4f(0, transformation.GetTransformation());
 		shader_program.SetUniformMatrix4f(1, camera.GetViewMatrix());
 		shader_program.SetUniformMatrix4f(2, camera.GetProjection(window.GetSize()));
+		// shader_program.SetUniformBool(3, true);
+		// shader_program.SetUniformInt(4, 0);
+		// shader_program.SetUniformVector3f(5, { 0.0f, 1.0f, 0.5f });
 		shader_program.Use();
+		texture.Bind();
 		renderer.Render(mesh);
 
 		window.SwapBuffers();

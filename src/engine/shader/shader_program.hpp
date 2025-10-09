@@ -18,6 +18,14 @@ public:
 
 	void Use() const;
 
+	void SetUniformBool(GLint location, bool value) const;
+
+	void SetUniformInt(GLint location, int value) const;
+
+	void SetUniformFloat(GLint location, float value) const;
+
+	void SetUniformVector3f(GLint location, const Vector3f &value) const;
+
 	void SetUniformMatrix4f(GLint location, const Matrix4f &matrix) const;
 
 	[[nodiscard]] GLuint GetHandle() const;
