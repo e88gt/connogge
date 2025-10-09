@@ -20,14 +20,14 @@ Vector3f &Camera3D::Rotation()
 	return m_rotation;
 }
 
-Matrix4f Camera3D::GetProjection(const Vector2f &size)
+Matrix4f Camera3D::GetProjection(const Vector2f &size) const
 {
 	Matrix4f m{ 1.0f };
 	m = glm::perspective(glm::radians(m_fov), size.x / size.y, m_z_near, m_z_far);
 	return m;
 }
 
-Matrix4f Camera3D::GetViewMatrix()
+Matrix4f Camera3D::GetViewMatrix() const
 {
 	Matrix4f m{ 1.0f };
 	m = glm::rotate(m, glm::radians(-m_rotation.z), { 0.0f, 0.0f, 1.0f });

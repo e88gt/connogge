@@ -14,9 +14,9 @@ public:
 
 	Vector3f &Rotation();
 
-	[[nodiscard]] Matrix4f GetViewMatrix() override;
+	[[nodiscard]] Matrix4f GetViewMatrix() const override;
 
-	[[nodiscard]] Matrix4f GetProjection(const Vector2f &size) override;
+	[[nodiscard]] Matrix4f GetProjection(const Vector2f &size) const override;
 
 private:
 	float m_fov, m_z_near, m_z_far;

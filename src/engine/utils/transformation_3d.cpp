@@ -12,7 +12,7 @@ Transformation3D::Transformation3D()
 
 Transformation3D::~Transformation3D() = default;
 
-Matrix4f Transformation3D::GetTransformation()
+Matrix4f Transformation3D::GetTransformation() const
 {
 	Matrix4f m{ 1.0f };
 	m = glm::translate(m, m_position);

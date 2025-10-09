@@ -10,7 +10,7 @@ public:
 
 	~Transformation3D() override;
 
-	[[nodiscard]] Matrix4f GetTransformation() override;
+	[[nodiscard]] Matrix4f GetTransformation() const override;
 
 	Vector3f &Position();
 

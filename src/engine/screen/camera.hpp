@@ -11,9 +11,9 @@ protected:
 public:
 	virtual ~Camera();
 
-	[[nodiscard]] virtual Matrix4f GetViewMatrix() = 0;
+	[[nodiscard]] virtual Matrix4f GetViewMatrix() const = 0;
 
-	[[nodiscard]] virtual Matrix4f GetProjection(const Vector2f &size) = 0;
+	[[nodiscard]] virtual Matrix4f GetProjection(const Vector2f &size) const = 0;
 };
 
 #endif //CAMERA_HPP

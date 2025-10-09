@@ -11,7 +11,7 @@ protected:
 public:
 	virtual ~Transformation();
 
-	[[nodiscard]] virtual Matrix4f GetTransformation() = 0;
+	[[nodiscard]] virtual Matrix4f GetTransformation() const = 0;
 };
 
 #endif //TRANSFORMATION_HPP
